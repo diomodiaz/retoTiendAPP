@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Iniciar Sesión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    </head>
+    <body class="bodyIndex">
+        <div class="container">
+            <div class="login-form col-md-4 offset-md-4">
+                <h1 class="title">Ingreso</h1>
+                <form class="" action="controlador/login.php" method="post">
+                    <div class="form-group">
+                        <label>Nombre Usuario: </label>
+                        <input class="form-control" type="text" name="username" placeholder="Nombre de Usuario" required="">
+                    </div>
+                    <div class="form-group">
+                        <label>Password: </label>
+                        <input class="form-control" type="password" name="password" id="mostrarPass" placeholder="Contraseña" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" onclick="mostrarPassword()">  Mostrar Password
+                        <script>
+                            function mostrarPassword() {
+                                var x = document.getElementById("mostrarPass");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+                            }
+                        </script>
+                    </div>
+                    <button class="btn btn-primary btn-block" name="button">Ingresar</button><br><br>
+                    <a href='registrar.html'>Crear Cuenta</a>
+
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

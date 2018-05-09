@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registrar Usuario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+        <style type="text/css">
+            body{
+                background-image: url(media/registro.jpg);
+                background-size: cover; 
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Resgistrate</h1>
+            <!--<div class="login-form col-md-4 offset-md-4">-->
+            <form class="container" action="controlador/create.php" method="post">
+                <div class="form-group">
+                    <label>Cedula: </label>
+                    <input class="form-control" type="text" name="cedula" placeholder="Documento" required>
+                </div>
+                <div class="form-group">
+                    <label>Nombre: </label>
+                    <input class="form-control" type="text" name="nombre" placeholder="Nombres" required>
+                </div>
+                <div class="form-group">
+                    <label>Apellido: </label>
+                    <input class="form-control" type="text" name="apellido" placeholder="Apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefono: </label>
+                    <input class="form-control" type="text" name="telefono" placeholder="Telefono" required>
+                </div>
+                <div class="form-group">
+                    <label>Correo: </label>
+                    <input class="form-control" type="email" name="mail" placeholder="E-mail" required>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-6 mb-3">
+                            <label>Username: </label>
+                            <input class="form-control" type="text" name="username" placeholder="User" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 mb-3">
+                            <label>Password: </label>
+                            <input class="form-control" type="password" name="password" placeholder="Contraseña" required><br>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-2 mb-3">
+                            <button class="btn btn-primary btn-block" name="button">Registrarme</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 mb-3">
+                            <a href='index.html'>Regresar</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- </div> -->
+    </body>
+</html>
