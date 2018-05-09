@@ -17,7 +17,6 @@
         </style>
     </head>
     <body>
-
         <div class="container">
             <ul class = "nav-barra de navegación nav">
                 <li><a href="publicar.html">Publicar</a></li>
